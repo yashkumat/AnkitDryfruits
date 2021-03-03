@@ -118,7 +118,7 @@
             </thead>
             <tbody id="table">
               <tr id="noItems">
-                <td colspan="5" class="text-center py-3">No items added yet!</td> 
+                <td colspan="5" class="text-center py-3">No items added yet! <br><a href="#ourProducts" class="btn btn-sm mt-2 btn-success">Shop Now</a></td> 
               </tr>
             </tbody>
           </table>
@@ -329,6 +329,7 @@
     cart.splice(a-1,1)
     buildCart()
     if(cart.length == 0){
+      document.getElementById('table').innerHTML = '<tr id="noItems"><td colspan="5" class="text-center py-3">No items added!<br><a href="#ourProducts" class="btn btn-sm mt-2 btn-success">Shop Now</a></td></tr>'
       totalAmount(0)
     }
   }
