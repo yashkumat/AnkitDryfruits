@@ -223,8 +223,12 @@
   addItem = (itemId) => { 
     
     if(document.getElementsByName('quantity')[itemId].value == '' || document.getElementsByName('quantity')[itemId].value == 0){
+      document.getElementsByName('quantity')[itemId].style["boxShadow"] = '0 0 3px 1px #ff0033'
+      document.getElementsByName('quantity')[itemId].style["z-index"] = '9999'
       return false
     }
+    
+    document.getElementsByName('quantity')[itemId].style["boxShadow"] = ''
 
     var quantity = parseInt(document.getElementsByName('quantity')[itemId].value);
     
