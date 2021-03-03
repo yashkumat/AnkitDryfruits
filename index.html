@@ -282,12 +282,12 @@
 
         if(item[2] == 1){
           quantity.innerHTML = item[1] + ' Kgs'
-          subtotal.innerHTML = items[item[0]][1] * item[1]
+          subtotal.innerHTML = (items[item[0]][1] * item[1]) + `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-trash text-danger" onclick="deleteItem(${i})"></i>`
           subTot += items[item[0]][1] * item[1]
 
         }else{
           quantity.innerHTML = item[1] + ' Grams'
-          subtotal.innerHTML = (items[item[0]][1]/1000) * item[1]
+          subtotal.innerHTML = ((items[item[0]][1]/1000) * item[1]) + `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-trash text-danger" onclick="deleteItem(${i})"></i>`
           subTot += (items[item[0]][1]/1000) * item[1]
         }
 
