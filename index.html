@@ -221,6 +221,10 @@
   let total = 0
 
   addItem = (itemId) => { 
+    
+    if(document.getElementsByName('quantity')[itemId].value == '' || document.getElementsByName('quantity')[itemId].value == 0){
+      return false
+    }
 
     var quantity = parseInt(document.getElementsByName('quantity')[itemId].value);
     
