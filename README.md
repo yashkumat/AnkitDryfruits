@@ -1,7 +1,6 @@
 # AnkitDryfruits
 
-### I have created this e-commerce website using Bootstrap, Font Awesome Icons, Animate.css, whatsapp api and JavaScript.
-### I used some built in functions in Javascript and Javascript HTML DOM.
+##### I have created this e-commerce website using Bootstrap, Font Awesome Icons, Animate.css, whatsapp api and JavaScript. It is made using built in functions in Javascript and Javascript HTML DOM mainly.
 
 - I have created object of elements - In that way Admin just have to add element to object and it will be displayed in frontend
 - Then for every validated item added to cart it's id and quantity will be added to array
